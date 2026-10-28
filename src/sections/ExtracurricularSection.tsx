@@ -1,8 +1,9 @@
 
 import AnimatedSection from '@/components/AnimatedSection';
-import profile from '@/data/profile';
+import { useLiveProfile } from '@/hooks/useLiveProfile';
 
 const ExtracurricularSection: React.FC = () => {
+  const { profile } = useLiveProfile();
   if (profile.extracurricular.length === 0) return null;
   
   return (

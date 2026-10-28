@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import profile from '@/data/profile';
+import { useLiveProfile } from '@/hooks/useLiveProfile';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -9,6 +9,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ setActivePage }) => {
+  const { profile } = useLiveProfile();
   const nameParts = profile.basics.name.split(' ');
   const firstName = nameParts[0];
   const lastName = nameParts.slice(1).join(' ');
@@ -209,7 +210,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ setActivePage }) => {
                 <img
                   src={profile.basics.picture || '/anubhi.jpeg'}
                   alt={profile.basics.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[center_18%]"
                   loading="lazy"
                   onError={(e) => {
                     e.currentTarget.src =

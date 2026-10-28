@@ -1,10 +1,7 @@
-
 import { useState, useEffect, useMemo } from 'react';
 import { Menu } from 'lucide-react';
 import NavLinks from './NavLinks';
-import ThemeToggle from './ThemeToggle';
-import PrintButton from './PrintButton';
-import profile from '@/data/profile';
+import { useLiveProfile } from '@/hooks/useLiveProfile';
 import { usePortfolio } from '@/hooks/usePortfolio';
 import { useBlogs } from '@/hooks/useBlogs';
 
@@ -42,6 +39,7 @@ const generateNavLinks = (
 };
 
 const Navbar: React.FC = () => {
+  const { profile } = useLiveProfile();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { data: portfolioItems } = usePortfolio();
@@ -51,7 +49,7 @@ const Navbar: React.FC = () => {
     () =>
       generateNavLinks(
         profile,
-        (portfolioItems?.length ?? 0) > 0,
+        true, // Always show portfolio
         (blogItems?.length ?? 0) > 0
       ),
     [portfolioItems, blogItems]
@@ -82,15 +80,10 @@ const Navbar: React.FC = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
           <NavLinks links={navLinks} />
-          <div className="flex items-center gap-3">
-            <ThemeToggle />
-            <PrintButton />
-          </div>
         </div>
 
         {/* Mobile Navigation */}
         <div className="flex md:hidden items-center gap-2">
-          <ThemeToggle />
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2"
@@ -110,9 +103,6 @@ const Navbar: React.FC = () => {
               links={navLinks}
               className="flex-col items-start gap-4"
             />
-            <div className="mt-4 pt-4 border-t border-border">
-              <PrintButton />
-            </div>
           </div>
         </div>
       )}

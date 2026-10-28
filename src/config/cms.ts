@@ -1,8 +1,14 @@
 export const CMS_CONFIG = {
   sheetId: import.meta.env.VITE_GOOGLE_SHEET_ID ?? '',
   tabs: {
-    portfolio: 'Portfolio',
+    general: 'General',
+    experience: 'Experience',
+    skills: 'Skills',
+    education: 'Education',
+    achievements: 'Achievements',
+    extracurricular: 'Extracurricular',
     blogs: 'Blogs',
+    portfolio: 'Portfolio',
   },
   /** Cache sheet data for 5 minutes; refetch in background so edits appear without redeploying. */
   staleTime: 5 * 60 * 1000,
@@ -10,5 +16,5 @@ export const CMS_CONFIG = {
 } as const;
 
 export function isCmsConfigured(): boolean {
-  return CMS_CONFIG.sheetId.length > 0;
+  return Boolean(CMS_CONFIG.sheetId && CMS_CONFIG.sheetId.trim().length > 0);
 }

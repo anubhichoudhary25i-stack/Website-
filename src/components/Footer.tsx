@@ -1,7 +1,8 @@
 
-import profile from '@/data/profile';
+import { useLiveProfile } from '@/hooks/useLiveProfile';
 
 const Footer: React.FC = () => {
+  const { profile } = useLiveProfile();
   const currentYear = new Date().getFullYear();
   
   return (

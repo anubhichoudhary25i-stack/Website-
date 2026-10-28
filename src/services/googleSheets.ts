@@ -9,7 +9,7 @@ interface GvizRow {
 }
 
 interface GvizTable {
-  cols: Array<{ label?: string }>;
+  cols: Array<{ label?: string; id?: string }>;
   rows: GvizRow[];
 }
 
@@ -30,7 +30,9 @@ function parseGvizResponse(rawText: string): GvizResponse {
 }
 
 function rowsToObjects(table: GvizTable): Record<string, unknown>[] {
-  const labels = table.cols.map((col) => (col.label ?? '').trim());
+  const labels = table.cols.map((col, index) => 
+    (col.label && col.label.trim()) || col.id || String.fromCharCode(65 + index)
+  );
 
   return table.rows.map((row) => {
     const record: Record<string, unknown> = {};
@@ -59,7 +61,7 @@ export async function fetchPublicSheetTab(
 
   const url =
     `https://docs.google.com/spreadsheets/d/${CMS_CONFIG.sheetId}/gviz/tq` +
-    `?tqx=out:json&sheet=${encodeURIComponent(tabName)}`;
+    `?tqx=out:json&sheet=${encodeURIComponent(tabName)}&headers=1`;
 
   const response = await fetch(url);
 

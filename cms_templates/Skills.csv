@@ -1,0 +1,20 @@
+SkillName,LevelPercentage,Category,DisplayOrder,Visible
+Brand Communication,90,Strategic & Branding,1,TRUE
+Digital Marketing,85,Strategic & Branding,2,TRUE
+Social Media Marketing,85,Strategic & Branding,3,TRUE
+Content Creation,90,Content & Narrative,4,TRUE
+Storytelling,85,Content & Narrative,5,TRUE
+Content Writing,88,Content & Narrative,6,TRUE
+Power BI,75,Analytics & Tools,7,TRUE
+Tableau,75,Analytics & Tools,8,TRUE
+MS Excel,80,Analytics & Tools,9,TRUE
+Data Visualization,78,Analytics & Tools,10,TRUE
+Market Research,80,Analytics & Tools,11,TRUE
+PowerPoint,85,Creative Tools,12,TRUE
+Canva,85,Creative Tools,13,TRUE
+Leadership,88,Leadership & Management,14,TRUE
+Problem-Solving,85,Leadership & Management,15,TRUE
+Strategic Planning,87,Leadership & Management,16,TRUE
+Team Collaboration,90,Leadership & Management,17,TRUE
+Project Management,85,Leadership & Management,18,TRUE
+Presentation,88,Leadership & Management,19,TRUE

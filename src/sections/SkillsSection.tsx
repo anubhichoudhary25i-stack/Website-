@@ -1,9 +1,10 @@
 
 import { motion } from 'framer-motion';
 import AnimatedSection from '@/components/AnimatedSection';
-import profile from '@/data/profile';
+import { useLiveProfile } from '@/hooks/useLiveProfile';
 
 const SkillsSection: React.FC = () => {
+  const { profile } = useLiveProfile();
   if (profile.skills.length === 0) return null;
   
   return (

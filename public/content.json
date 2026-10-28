@@ -1,0 +1,95 @@
+{
+  "General": [
+    { "key": "hero_headline", "value": "Turning the<br />Unnoticed<br />into Unforgettable" },
+    { "key": "hero_subtitle", "value": "Reimagining the obvious. Reframing the ordinary." },
+    { "key": "bio_title", "value": "Who is Anubhi?" },
+    { "key": "bio_tagline", "value": "A curious mind with a storyteller’s heart and an instinct for what makes people tick." },
+    { "key": "bio_p1", "value": "I’ve always been fascinated by the little things: a phrase that stays with you, a brand you recognise without seeing its logo, or a story that makes you feel understood without knowing why." },
+    { "key": "bio_p2", "value": "What makes one message forgettable and another impossible to ignore? Why do we connect with certain brands as if they were people?" },
+    { "key": "bio_p3", "value": "Somewhere between these questions and my love for words, I discovered my fascination with marketing, branding, and communication." },
+    { "key": "bio_p4", "value": "To me, a brand is more than a name, a logo, or a clever tagline. It’s a feeling, a perception, a promise, and a story told consistently enough to be remembered. And marketing? It’s the art of understanding people, finding the right insight, and turning it into something that resonates." },
+    { "key": "bio_p5", "value": "I’m Anubhi, perpetually curious, occasionally overthinking a three-word headline, and always looking for the story behind the story. Because the most interesting part of any brand isn’t just what it says; it’s what makes people listen." },
+    { "key": "phone", "value": "+91-96699-71857" },
+    { "key": "email", "value": "anubhi.choudhary.25i@gmail.com" },
+    { "key": "linkedin", "value": "https://www.linkedin.com/in/anubhi-choudhary-0bb680188/" }
+  ],
+  "Testimonials": [
+    {
+      "name": "Trinayan Jyoti Saikia",
+      "role": "Driving Organizational Growth through People • Enterprise Leadership | People Strategy | Innovation | AI Adoption",
+      "context": "Managed Anubhi directly at STPL",
+      "quotehighlight": "Anubhi is a passionate and energetic professional who consistently impressed us with her proactive approach and insightful suggestions.",
+      "fulltext": "I had the pleasure of working with Anubhi during her Management Internship at STPL as part of her MBA Marketing program. Anubhi is a passionate and energetic professional who consistently impressed us with her proactive approach and insightful suggestions.\n\nThroughout her internship, Anubhi played a crucial role in developing and executing various marketing campaigns. Her ability to quickly grasp new concepts and her deep understanding of the latest marketing and branding trends made her an invaluable asset to our team.\n\nAnubhi was instrumental in creating marketing audio and video content. She not only conceptualized and visualized ideas but also wrote compelling scripts that resonated with our target audience. Her creativity and attention to detail ensured that our campaigns were both innovative and effective.\n\nI highly recommend Anubhi for any marketing role and look forward to seeing her achieve great success in her future endeavors.",
+      "date": "July 9, 2024",
+      "platform": "LinkedIn",
+      "photourl": ""
+    }
+  ],
+  "Clients": [
+    {
+      "sector": "AVGC Sector",
+      "company": "Reliance Animation Academy",
+      "description": "Client servicing, digital communication strategy, social media planning, and brand positioning.",
+      "logourl": "images/clients/reliance_animation.jpeg",
+      "linkurl": "#contact"
+    },
+    {
+      "sector": "Aerospace & Tech",
+      "company": "CANEUS MNT",
+      "description": "End-to-end website content development, brand messaging, and stakeholder communications.",
+      "logourl": "images/clients/caneus_logo.png",
+      "linkurl": "#contact"
+    },
+    {
+      "sector": "Logistics",
+      "company": "Swiss Expo Logistics",
+      "description": "B2B brand management, account coordination, and event logistics communication.",
+      "logourl": "images/clients/swiss_expo_logo.png",
+      "linkurl": "#contact"
+    }
+  ],
+  "Events": [
+    {
+      "sector": "State Initiatives",
+      "title": "Government of Karnataka",
+      "description": "Flagship technology outreach and state summit branding.",
+      "logourl": "images/events/govt_karnataka.png",
+      "linkurl": "#contact"
+    },
+    {
+      "sector": "Mobility Summit",
+      "title": "Prawaaas 5.0",
+      "description": "Integrated marketing communications (IMC) & promotional campaigns.",
+      "logourl": "images/events/prawaas_logo.png",
+      "linkurl": "#contact"
+    },
+    {
+      "sector": "Industry Awards",
+      "title": "Exhibition Excellence Awards 2026",
+      "description": "Overseeing content strategy and summit narrative.",
+      "logourl": "images/events/eea_logo.png",
+      "linkurl": "#contact"
+    },
+    {
+      "sector": "Exhibition Leadership",
+      "title": "15th IEIA Open Seminar",
+      "description": "Event marketing, program coordination, and stakeholder liaison.",
+      "logourl": "images/events/ieia_logo.png",
+      "linkurl": "#contact"
+    },
+    {
+      "sector": "Sci-Tech Summits",
+      "title": "Bengaluru India Nano & BTS 2026",
+      "description": "Major tech summit coordination and public relations management.",
+      "logourl": "images/events/bts_logo.png",
+      "linkurl": "#contact"
+    },
+    {
+      "sector": "Sustainability & Transit",
+      "title": "SuschemE 3.0 & TRANSIT 2026",
+      "description": "Campaign design, delegate engagement, and communication support.",
+      "logourl": "images/events/suscheme_logo.png",
+      "linkurl": "#contact"
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 
 import { useState } from 'react';
 import AnimatedSection from '@/components/AnimatedSection';
-import profile from '@/data/profile';
+import { useLiveProfile } from '@/hooks/useLiveProfile';
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 
 const ContactSection: React.FC = () => {
+  const { profile } = useLiveProfile();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',

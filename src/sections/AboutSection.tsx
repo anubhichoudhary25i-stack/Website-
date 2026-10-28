@@ -1,8 +1,9 @@
 
 import AnimatedSection from '@/components/AnimatedSection';
-import profile from '@/data/profile';
+import { useLiveProfile } from '@/hooks/useLiveProfile';
 
 const AboutSection: React.FC = () => {
+  const { profile } = useLiveProfile();
   return (
     <AnimatedSection id="about" className="py-16 bg-secondary/30">
       <div className="container max-w-content mx-auto px-4">
